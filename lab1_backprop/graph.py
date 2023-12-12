@@ -7,7 +7,7 @@ class Graph(nn.Module):
         super().__init__()
         self.w = nn.Parameter(tensor([0.950, 0.288], dtype=float32))
 
-    def forward(self, x1: float32, x2: float32, x3: float32) -> float32:
+    def forward(self, x1, x2, x3):
         w0, w1 = self.w
 
         r1 = w0 * x3 * w1 + w1 * x2 + x3 ** 2
