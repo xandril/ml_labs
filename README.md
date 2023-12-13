@@ -23,3 +23,21 @@
 5. export_to_onnx - скрипт для генерации модели в onnx
 6. task_notebook_with_example.ipynb - исходный жупитер ноутбук с заданием
 
+# Задача 3(lab3_mnist_cnn)
+### Условия:
+Сверточная нейронная сеть и её обучение на MNIST
+
+### описание пакета lab3_mnist_cnn(https://github.com/xandril/cnn/tree/master/mnist_cnn)
+1. train.py - скрипт для обучения модели, на вход принимает путь до pickle файла, в котором будут сохранены веса и loss на обучении
+```
+python train.py params/_params42.pkl
+```
+2. test.py - скрипт для тестирования модели, сохраняет html файлы с интерактивными графиками train loss, confusion matrix, roc curve, precision, recall, f1
+на вход принимает путь до pkl файла, полученного на train и сохраняет в ту же папку html'ки
+```
+python test.py params/_params42.pkl
+```
+
+3. cnn - модуль с компонентами модели - forward, backward, loss, convolution, poolings, в качестве оптимизатора использовался nesterov momentum
+   
+
