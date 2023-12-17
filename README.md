@@ -23,6 +23,13 @@
 5. export_to_onnx - скрипт для генерации модели в onnx
 6. task_notebook_with_example.ipynb - исходный жупитер ноутбук с заданием
 
+# Задача 2(perceptron)
+### Условия:
+1. Реализовать Персептрон на numpy.
+2. Обучить персептрон на MNIST.
+3. Обучить logreg на эмбеддингах перспетрона определять четность цифр.
+### Описание:
+Вынесена в отдельный репозиторий - https://github.com/xandril/perceptron_numpy
 # Задача 3(lab3_mnist_cnn)
 ### Условия:
 Сверточная нейронная сеть и её обучение на MNIST
@@ -39,5 +46,13 @@ python test.py params/_params42.pkl
 ```
 
 3. cnn - модуль с компонентами модели - forward, backward, loss, convolution, poolings, в качестве оптимизатора использовался nesterov momentum
-   
+
+# Задача 4(lab4)
+### Условия:
+Обучить Inception на CIFAR10
+
+### Описание:
+1. inception.py - модуль с классом модели
+2. train.ipynb - ноутбук с обучением и тестом модели
+
 
